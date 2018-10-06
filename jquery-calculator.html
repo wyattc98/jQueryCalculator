@@ -71,13 +71,25 @@
   </div>
 
 <script type="text/javascript">
+  var num1 = '';
+  var num2 = '';
+  var operator = '';
+  var total = '';
 
 $(document).ready(function() {
+  $('button').on("click", function(e) {
+   console.log('numberClicked', this.value);
+   var buttonValue = e.target.innerHTML;
+  // $('button').on('click', funciton(e) {
+     //var btn = e.target.innerHTML;
 
+   })
+   $('#first-number').html(buttonValue)
+   num1 = buttonValue;
+   });
 // Your code here...
 
 
-});
 
 </script>
 
